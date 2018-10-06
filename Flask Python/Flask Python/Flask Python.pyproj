@@ -10,7 +10,7 @@
     <OutputPath>.</OutputPath>
     <Name>Flask Python</Name>
     <RootNamespace>Flask Python</RootNamespace>
-    <InterpreterId>Global|ContinuumAnalytics|Anaconda27-64</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,22 +24,22 @@
     <Compile Include="Flask_Python.py" />
   </ItemGroup>
   <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="model\" />
     <Folder Include="model\data\" />
     <Folder Include="model\metadata\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="model\data\.part-00000-f1e2a6cd-98cd-43d4-b698-a473542d4cde-c000.snappy.parquet.crc" />
+    <Content Include="model\data\.part-00000-b60b5821-ea95-4646-bd45-d75f4be84119-c000.snappy.parquet.crc" />
     <Content Include="model\data\._SUCCESS.crc" />
-    <Content Include="model\data\part-00000-f1e2a6cd-98cd-43d4-b698-a473542d4cde-c000.snappy.parquet" />
+    <Content Include="model\data\part-00000-b60b5821-ea95-4646-bd45-d75f4be84119-c000.snappy.parquet" />
     <Content Include="model\data\_SUCCESS" />
     <Content Include="model\metadata\.part-00000.crc" />
     <Content Include="model\metadata\._SUCCESS.crc" />
     <Content Include="model\metadata\part-00000" />
     <Content Include="model\metadata\_SUCCESS" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda27-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

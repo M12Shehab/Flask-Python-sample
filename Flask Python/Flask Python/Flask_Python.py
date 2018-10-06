@@ -50,7 +50,8 @@ def postJsonHandler():
     #print (df['Summary'])
     #print(text)
     try:
-        model = PipelineModel.load('G:/Projects/Flask-Python-sample/Flask Python/Flask Python/model/')
+        model = PipelineModel.load('model')
+        
         # Make predictions on test documents and print columns of interest.
         prediction = model.transform(data)
         selected = prediction.select("label", "Summary", "probability", "prediction")
